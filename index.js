@@ -17,7 +17,7 @@ function writeToFile(filename, data) {
 
 
   
-function init () {
+function init() {
     inquirer.prompt([
             {
                 type: 'input',
@@ -55,5 +55,4 @@ function init () {
 
 
 //INITIALIZE
-
 init();
