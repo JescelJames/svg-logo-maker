@@ -24,6 +24,12 @@ function init () {
                 name: 'radius',
                 message: 'Enter the radius of the circle: ',
                 default: 50
+            },
+            {
+                type: 'input',
+                name: 'color',
+                message: 'Enter the fill color of the circle: ',
+                default: 'red'
             }
     ])
 
