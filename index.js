@@ -1,1 +1,2 @@
-console.log('test new file');
+require('inquirer');
+require('fs');
