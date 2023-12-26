@@ -21,6 +21,13 @@ function init () {
     inquirer.prompt([
             {
                 type: 'input',
+                name: 'text',
+                message: 'Enter up to 3 characters to display inside the circle: ',
+                validate: input => input.length <= 3 || 'Text must be up to 3 characters only',
+                default: ''
+            },
+            {
+                type: 'input',
                 name: 'radius',
                 message: 'Enter the radius of the circle: ',
                 default: 50
