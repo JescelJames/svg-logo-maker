@@ -33,6 +33,7 @@ function init () {
             
                 writeToFile('output.svg', svgContent);   
 
+                console.log(answers);
             })
 
             
