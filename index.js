@@ -5,7 +5,7 @@ const fs = require('fs');
 //FUNCTIONS
 
 function generateSvgContent(answers) {
-    const baseSvg = `<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">`
+    const baseSvg = `<svg width="200" height="300" xmlns="http://www.w3.org/2000/svg">`
     
     let shapeSvg = '';
     switch(answers.shape) {
@@ -14,12 +14,15 @@ function generateSvgContent(answers) {
             case 'circle':
                 shapeSvg = `<circle cx="100" cy="100" r="${answers.radius}" fill="${answers.color}" />`
                 break;
+            
+            case 'square':
+                shapeSvg = `<rect x="50" y="50" width="200" height="300" fill="${answers.color}" />`
 
     }
     
     const textSvg = `<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="${answers.textcolor}">${answers.text}</text>`
         
-    return `${baseSvg}${shapeSvg}</svg>`;
+    return `${baseSvg}${shapeSvg}${textSvg}</svg>`;
 
 }    
     
