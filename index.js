@@ -20,7 +20,7 @@ function generateSvgContent(answers) {
 
     }
     
-    const textSvg = `<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="${answers.textcolor}">${answers.text}</text>`
+    const textSvg = `<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="50" fill="${answers.textcolor}">${answers.text}</text>`
         
     return `${baseSvg}${shapeSvg}${textSvg}</svg>`;
 
