@@ -5,17 +5,34 @@ const fs = require('fs');
 //FUNCTIONS
 
 function generateSvgContent(answers) {
-    return `<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-        
-         <circle cx="100" cy="100" r="${answers.radius}" fill="${answers.color}" />
-        
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="${answers.textcolor}">${answers.text}</text>
+    const baseSvg = `<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">`
+    
+    let shapeSvg = '';
+    switch(answers.shape) {
         
 
+            case 'circle':
+                shapeSvg = `<circle cx="100" cy="100" r="${answers.radius}" fill="${answers.color}" />`
+                break;
+
+    }
+    
+    const textSvg = `<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="${answers.textcolor}">${answers.text}</text>`
+        
+    return `${baseSvg}${shapeSvg}</svg>`;
+
+}    
+    
+        
+         
+        
+        
+        
+    
         
        
-    </svg>`;
-}
+   
+
 
 function writeToFile(filename, data) {
         
