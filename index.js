@@ -12,11 +12,11 @@ function generateSvgContent(answers) {
         
 
             case 'circle':
-                shapeSvg = `<circle cx="100" cy="100" r="${answers.radius}" fill="${answers.color}" />`
+                shapeSvg = `<circle cx="100" cy="150" r="80" fill="${answers.color}" />`
                 break;
             
             case 'square':
-                shapeSvg = `<rect x="50" y="50" width="200" height="300" fill="${answers.color}" />`
+                shapeSvg = `<rect x="25" y="50" width="150" height="150" fill="${answers.color}" />`
 
     }
     
@@ -65,12 +65,7 @@ function init() {
                 name: 'shape',
                 choices: ['circle', 'triangle', 'square'],
             },
-            {
-                type: 'input',
-                name: 'radius',
-                message: 'Enter the radius of the circle: ',
-                default: 50
-            },
+
             {
                 type: 'input',
                 name: 'color',
