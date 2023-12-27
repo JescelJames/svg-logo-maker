@@ -1,1 +1,1 @@
-<svg width="200" height="300" xmlns="http://www.w3.org/2000/svg"><rect x="25" y="50" width="150" height="150" fill="orange" /><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="50" fill="blue">lss</text></svg>
+<svg width="200" height="300" xmlns="http://www.w3.org/2000/svg"><polygon points="100,10 40,290 160,290" fill="RED" /><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="50" fill="WHITE">ABC</text></svg>

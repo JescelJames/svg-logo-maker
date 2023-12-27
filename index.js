@@ -18,6 +18,9 @@ function generateSvgContent(answers) {
             case 'square':
                 shapeSvg = `<rect x="25" y="50" width="150" height="150" fill="${answers.color}" />`
 
+            case 'triangle':
+                shapeSvg = `<polygon points="100,10 40,290 160,290" fill="${answers.color}" />`;
+
     }
     
     const textSvg = `<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="50" fill="${answers.textcolor}">${answers.text}</text>`
@@ -63,7 +66,7 @@ function init() {
                 type: 'list',
                 message: 'Select the shape of your logo: ',
                 name: 'shape',
-                choices: ['circle', 'triangle', 'square'],
+                choices: ['circle', 'square', 'triangle' ],
             },
 
             {
