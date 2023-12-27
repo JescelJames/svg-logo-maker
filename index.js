@@ -39,12 +39,7 @@ function init() {
                 message: 'Enter the color of the text: ',
                
             },
-            {
-                type: 'list',
-                message: 'Select the shape of your logo: ',
-                name: 'shape',
-                choices: ['circle', 'triangle', 'square'],
-            },
+
             {
                 type: 'input',
                 name: 'radius',
