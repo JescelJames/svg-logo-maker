@@ -52,7 +52,7 @@ function init() {
             {
                 type: 'input',
                 name: 'text',
-                message: 'Enter up the text to display up to 3 characters: ',
+                message: 'Enter the text to display (3 characters max):',
                 validate: input => input.length <= 3 || 'Text must be up to 3 characters only',
                 default: ''
             },
@@ -64,7 +64,7 @@ function init() {
             },
             {
                 type: 'list',
-                message: 'Select the shape of your logo: ',
+                message: 'Select the shape of the logo: ',
                 name: 'shape',
                 choices: ['circle', 'square', 'triangle' ],
             },
@@ -72,7 +72,7 @@ function init() {
             {
                 type: 'input',
                 name: 'color',
-                message: 'Enter the fill color of the circle: ',
+                message: 'Enter the fill color of the logo: ',
                 default: 'red'
             }
     ])
