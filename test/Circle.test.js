@@ -10,3 +10,10 @@ describe('Create a Circle class', () => {
     })
 })
 
+describe('Circle class test shape', () => {
+    it('should render the correct color', () => {
+        const shape = new Circle();
+        shape.setColor("blue");
+        expect(shape.render()).toEqual('<circle cx="100" cy="150" r="80" fill="blue" />');
+    })
+})
