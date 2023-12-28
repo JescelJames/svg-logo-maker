@@ -37,23 +37,12 @@ function generateSvgContent(answers) {
     return `${baseSvg}${shapeSvg}${textSvg}</svg>`;
 
 }    
-    
-        
-         
-        
-        
-        
-    
-        
-       
-   
 
 
 function writeToFile(filename, data) {
         
     fs.writeFile(filename, data, "utf8", (error) =>  error ? console.error(error) : console.log('Success!'));
 }
-
 
   
 function init() {
@@ -96,7 +85,6 @@ function init() {
                 console.log('Generated logo.svg');
             })
 
-            
 }
 
 

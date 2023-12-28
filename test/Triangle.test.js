@@ -4,7 +4,6 @@ const { triggerAsyncId } = require('async_hooks');
 
 const Triangle = require('../lib/Triangle');
 
-
 describe('Triangle class color test', () => {
     it('should render the correct color', () => {
         const shape = new Triangle();
