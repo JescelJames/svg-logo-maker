@@ -16,6 +16,26 @@ This challenge helps the user create a simple logo using Node.js command-line ap
 
 - Video Demonstration: https://drive.google.com/file/d/1SXiG7aL2OWJx2iB6PMPH-uKd87j7PX53/view
 
+### Video and Photos
+[svg_logo.webm](https://github.com/JescelJames/svg-logo-maker/assets/105643185/8a1e60ba-76b7-43f7-b263-834738c56830)
+
+
+![tests_pass](https://github.com/JescelJames/svg-logo-maker/assets/105643185/41a83121-3fc6-4421-9906-a9c5dd57d311)
+
+
+
+![node_index](https://github.com/JescelJames/svg-logo-maker/assets/105643185/fcf8cdc6-e0ee-491b-8eb5-97e9a645f73d)
+
+
+![svg_logo_abc](https://github.com/JescelJames/svg-logo-maker/assets/105643185/974d5105-1357-463a-8d44-01e55f76569a)
+
+
+![svg_log_def](https://github.com/JescelJames/svg-logo-maker/assets/105643185/1342ab8d-acf9-41f0-9fb4-65fa2eae1e44)
+
+
+![svg_logo_hij](https://github.com/JescelJames/svg-logo-maker/assets/105643185/1209f572-0978-4c28-872b-e3224b55b27d)
+
+
 
 
 
