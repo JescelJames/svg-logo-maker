@@ -1,9 +1,9 @@
 //DEPENDENCIES/REQUIRES
 const inquirer = require('inquirer');
 const fs = require('fs');
+const Circle = require('./lib/Circle')
 
 //FUNCTIONS
-
 function generateSvgContent(answers) {
     const baseSvg = `<svg width="200" height="300" xmlns="http://www.w3.org/2000/svg">`
     
@@ -12,7 +12,9 @@ function generateSvgContent(answers) {
         
 
             case 'circle':
-                shapeSvg = `<circle cx="100" cy="150" r="80" fill="${answers.color}" />`
+                const circle = new Circle(answers.color);
+                // shapeSvg = `<circle cx="100" cy="150" r="80" fill="${answers.color}" />`
+                shapeSvg = circle.render();
                 break;
             
             case 'square':
