@@ -10,6 +10,13 @@ This challenge helps the user create a simple logo using Node.js command-line ap
 - Why I took this challege: To learn to create an SVG file using prompts from command-line.
 - What the challenge solved:  The user can create a simple SVG file from prompts from command-line. 
 
+- Repository Link: https://github.com/JescelJames/svg-logo-maker
+
+- Deployed Link: https://jesceljames.github.io/svg-logo-maker/
+
+
+
+
 
 ### What I learned:  
 
