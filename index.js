@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const Circle = require('./lib/Circle');
 const Square = require('./lib/Square');
+const Triangle = require('./lib/Triangle');
 
 //FUNCTIONS
 function generateSvgContent(answers) {
@@ -25,7 +26,9 @@ function generateSvgContent(answers) {
                 break;
 
             case 'triangle':
-                shapeSvg = `<polygon points="100,10 40,290 160,290" fill="${answers.color}" />`;
+                // shapeSvg = `<polygon points="100,10 40,290 160,290" fill="${answers.color}" />`;
+                const triangle = new Triangle(answers.color);
+                shapeSvg = triangle.render();
                 break;
     }
     
