@@ -39,3 +39,36 @@ Prerequisites:
 1. Command-line instructions:
 
         node index.js
+
+
+## Credits
+
+#### My Instructors:
+- Ben Wright 
+- Max Ohsawa 
+
+#### My Academic Advisor
+- Mike Sweeney
+
+#### My Classmates
+- Who are smarter than me, and willing to help at all times.
+
+#### Npm Inquirer
+https://www.npmjs.com/package/inquirer
+
+#### Jestjs.io
+https://jestjs.io/
+
+#### MDG SVG Docs
+
+https://developer.mozilla.org/en-US/docs/Web/SVG
+
+
+#### Music while coding:
+https://www.youtube.com/watch?v=tkgmYIsflSU&ab_channel=ChillMusicLab
+
+
+## Contact
+For any additional questions about this project, contact me at:
+- Email: jesceljames@gmail.com
+- Github: https://github.com/jesceljames
