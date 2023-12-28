@@ -1,7 +1,8 @@
 //DEPENDENCIES/REQUIRES
 const inquirer = require('inquirer');
 const fs = require('fs');
-const Circle = require('./lib/Circle')
+const Circle = require('./lib/Circle');
+const Square = require('./lib/Square');
 
 //FUNCTIONS
 function generateSvgContent(answers) {
@@ -18,7 +19,9 @@ function generateSvgContent(answers) {
                 break;
             
             case 'square':
-                shapeSvg = `<rect x="25" y="75" width="150" height="150" fill="${answers.color}" />`
+                const square = new Square(answers.color);
+                // shapeSvg = `<rect x="25" y="75" width="150" height="150" fill="${answers.color}" />`
+                shapeSvg = square.render();
                 break;
 
             case 'triangle':
