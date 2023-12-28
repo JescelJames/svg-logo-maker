@@ -10,7 +10,7 @@ describe('Create a Circle class', () => {
     })
 })
 
-describe('Circle class test shape', () => {
+describe('Circle class color test', () => {
     it('should render the correct color', () => {
         const shape = new Circle();
         shape.setColor("blue");
