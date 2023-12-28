@@ -12,7 +12,8 @@ function generateSvgContent(answers) {
         
 
             case 'circle':
-                shapeSvg = `<circle cx="100" cy="150" r="80" fill="${answers.color}" />`
+                const circle = new Circle(answers.color)
+                shapeSvg = circle.render();
                 break;
             
             case 'square':
