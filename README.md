@@ -34,3 +34,8 @@ Prerequisites:
  - npmjs.com inquirer package:  https://www.npmjs.com/package//inquirer
 
  - jestjs.io:  https://jestjs.io/
+
+ ## Usage
+1. Command-line instructions:
+
+        node index.js
