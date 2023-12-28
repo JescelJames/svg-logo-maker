@@ -16,7 +16,7 @@ function generateSvgContent(answers) {
                 break;
             
             case 'square':
-                shapeSvg = `<rect x="25" y="50" width="150" height="150" fill="${answers.color}" />`
+                shapeSvg = `<rect x="25" y="75" width="150" height="150" fill="${answers.color}" />`
                 break;
 
             case 'triangle':
