@@ -1,9 +1,9 @@
 //DEPENDENCIES/REQUIRES
 const inquirer = require('inquirer');
 const fs = require('fs');
+const Circle = require('./lib/Circle')
 
 //FUNCTIONS
-
 function generateSvgContent(answers) {
     const baseSvg = `<svg width="200" height="300" xmlns="http://www.w3.org/2000/svg">`
     
