@@ -24,3 +24,13 @@ This challenge helps the user create a simple logo using Node.js command-line ap
 
 ## Code Description
 This code can be accessed in terminal by running index.js file. type: node index.js in terminal and prompts will appear to create a logo.svg file.  Run the logo.svg file in browser to see the result.
+
+
+## Installation Instructions
+
+Prerequisites:  
+ - Node.js. Download Node.js at https://nodejs.org/en
+
+ - npmjs.com inquirer package:  https://www.npmjs.com/package//inquirer
+
+ - jestjs.io:  https://jestjs.io/
