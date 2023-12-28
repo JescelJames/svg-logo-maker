@@ -54,7 +54,7 @@ function init() {
                 name: 'text',
                 message: 'Enter the text to display (3 characters max):',
                 validate: input => input.length <= 3 || 'Text must be up to 3 characters only',
-                default: ''
+                
             },
             {
                 type: 'input',
@@ -81,7 +81,7 @@ function init() {
                 const svgContent = generateSvgContent(answers);
 
             
-                writeToFile('output.svg', svgContent);   
+                writeToFile('logo.svg', svgContent);   
 
                 console.log(answers);
             })
