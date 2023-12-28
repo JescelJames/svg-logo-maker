@@ -5,17 +5,41 @@ const fs = require('fs');
 //FUNCTIONS
 
 function generateSvgContent(answers) {
-    return `<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-        
-         <circle cx="100" cy="100" r="${answers.radius}" fill="${answers.color}" />
-        
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="${answers.textcolor}">${answers.text}</text>
+    const baseSvg = `<svg width="200" height="300" xmlns="http://www.w3.org/2000/svg">`
+    
+    let shapeSvg = '';
+    switch(answers.shape) {
         
 
+            case 'circle':
+                shapeSvg = `<circle cx="100" cy="150" r="80" fill="${answers.color}" />`
+                break;
+            
+            case 'square':
+                shapeSvg = `<rect x="25" y="75" width="150" height="150" fill="${answers.color}" />`
+                break;
+
+            case 'triangle':
+                shapeSvg = `<polygon points="100,10 40,290 160,290" fill="${answers.color}" />`;
+                break;
+    }
+    
+    const textSvg = `<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="50" fill="${answers.textcolor}">${answers.text}</text>`
+        
+    return `${baseSvg}${shapeSvg}${textSvg}</svg>`;
+
+}    
+    
+        
+         
+        
+        
+        
+    
         
        
-    </svg>`;
-}
+   
+
 
 function writeToFile(filename, data) {
         
@@ -29,9 +53,9 @@ function init() {
             {
                 type: 'input',
                 name: 'text',
-                message: 'Enter up the text to display up to 3 characters: ',
+                message: 'Enter the text to display (3 characters max):',
                 validate: input => input.length <= 3 || 'Text must be up to 3 characters only',
-                default: ''
+                
             },
             {
                 type: 'input',
@@ -41,20 +65,15 @@ function init() {
             },
             {
                 type: 'list',
-                message: 'Select the shape of your logo: ',
+                message: 'Select the shape of the logo: ',
                 name: 'shape',
-                choices: ['circle', 'triangle', 'square'],
+                choices: ['circle', 'square', 'triangle' ],
             },
-            {
-                type: 'input',
-                name: 'radius',
-                message: 'Enter the radius of the circle: ',
-                default: 50
-            },
+
             {
                 type: 'input',
                 name: 'color',
-                message: 'Enter the fill color of the circle: ',
+                message: 'Enter the fill color of the logo: ',
                 default: 'red'
             }
     ])
@@ -63,9 +82,10 @@ function init() {
                 const svgContent = generateSvgContent(answers);
 
             
-                writeToFile('output.svg', svgContent);   
+                writeToFile('logo.svg', svgContent);   
 
                 console.log(answers);
+                console.log('Generated logo.svg');
             })
 
             
