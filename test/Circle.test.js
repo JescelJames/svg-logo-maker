@@ -9,3 +9,4 @@ describe('Create a Circle class', () => {
         expect (circle).toBeInstanceOf(Circle)
     })
 })
+
